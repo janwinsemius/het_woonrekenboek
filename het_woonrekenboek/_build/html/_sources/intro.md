@@ -1,6 +1,6 @@
 # Welcome to your Jupyter Book
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janwinsemius/het_woonrekenboek/gh-pages?urlpath=tree))
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janwinsemius/het_woonrekenboek/gh-pages)
 
 This is a small sample book to give you a feel for how book content is
 structured.
