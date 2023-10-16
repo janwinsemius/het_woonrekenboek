@@ -5,8 +5,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - het_woonrekenboek/**
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
@@ -38,4 +36,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: het_woonrekenboek/html
+        publish_dir: het_woonrekenboek/_build/html

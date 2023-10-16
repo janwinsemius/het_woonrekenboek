@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Install the Jupyter kernel so widgets work
+python -m ipykernel install --user --name=myenv
+
+# Any other setup commands or environment configuration
