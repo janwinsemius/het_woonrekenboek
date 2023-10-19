@@ -1,8 +1,11 @@
-p {
-    font-size: 24px!important;
-    color: #0077b6;
+
+
+.bd-sidebar-primary a {
+    font-size: 10px;
 }
 
-body {
-    font-size: 48px!important;
+.reference:hover {
+    text-decoration: none!important;
+    color: red!important;
+    font-weight: bold!important;
 }

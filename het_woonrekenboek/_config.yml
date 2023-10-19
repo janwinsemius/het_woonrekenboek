@@ -36,5 +36,7 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-extra_css:
-  - _static/custom.css
+extra_static_paths:
+  - _static
+custom_static_path: ['_static']
+extra_css: ['custom.css']
