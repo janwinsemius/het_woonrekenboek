@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Content in Jupyter Book &#8212; het_woonrekenboek</title>
+    <title>Contante Waarde &#8212; het_woonrekenboek</title>
   
   
   
@@ -63,9 +63,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'netto_contante_waarde';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Parameters" href="parameters.html" />
+    <link rel="prev" title="Tijdsvoorkeur van geld" href="tijdsvoorkeur.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -165,10 +169,23 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="financiele-rekenkunde.html">Financiële rekenkunde</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Financiele Rekenkunde</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="financiele-rekenkunde.html">Inleiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tijdsvoorkeur.html">Tijdsvoorkeur van geld</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Contante Waarde</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parameters.html">Parameters</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Stichtingskosten en RGW</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Grondexploitatie</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Woningexploitatie</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -241,7 +258,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/janwinsemius/het_woonrekenboek/issues/new?title=Issue%20on%20page%20%2Fcontent.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/janwinsemius/het_woonrekenboek/issues/new?title=Issue%20on%20page%20%2Fnetto_contante_waarde.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,7 +288,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/content.md" target="_blank"
+      <li><a href="_sources/netto_contante_waarde.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -351,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content in Jupyter Book</h1>
+    <h1>Contante Waarde</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,10 +382,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="content-in-jupyter-book">
-<h1>Content in Jupyter Book<a class="headerlink" href="#content-in-jupyter-book" title="Permalink to this heading">#</a></h1>
-<p>There are many ways to write content in Jupyter Book. This short section
-covers a few tips for how to do so.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="contante-waarde">
+<h1>Contante Waarde<a class="headerlink" href="#contante-waarde" title="Permalink to this heading">#</a></h1>
+<p>In de vastgoedpraktijk is vaak de omgekeerde vraag aan de orde. Het gaat er niet om wat een bedrag dat je vandaag hebt over 10 jaar waard is, maar de vraag is juist hoeveel je vandaag kan kopen van een bedrag dat je pas over 10 jaar krijgt. Dat is bijvoorbeeld de essentie van een huurexploitatie. Je krijgt 50 jaar lang huur. Hoeveel kun je vandaag uitgeven aan een huis op basis van die toekomstige huurinkomsten? De rekensom wordt eigenlijk omgekeerd. Je moet dan ook niet vermenigvuldigen, maar delen.</p>
+<p>Als je volgend jaar € 1000,- krijgt, is de waarde daarvan vandaag:</p>
+<p> <span class="math notranslate nohighlight">\(1000 / 1.05 = 952.38\)</span></p>
+<p> </p>
+<p>Als je over 2 jaar € 1000,- krijgt, is de waarde daarvan vandaag:</p>
+<p> <span class="math notranslate nohighlight">\(1000 / 1.05 / 1.05 = 907.03\)</span></p>
+<p> </p>
+<p>Als je over 3 jaar € 1000,- krijgt, is de waarde daarvan vandaag:</p>
+<p> <span class="math notranslate nohighlight">\(1000 / 1.05 / 1.05 / 1.05 = 863.838\)</span></p>
+<p> </p>
+<p>Ook dat kan weer snel in 1 keer worden uitgerekend:</p>
+<p> jaar 0: <span class="math notranslate nohighlight">\(1000 / (1,05)^0 = 1000\)</span></p>
+<p> jaar 1: <span class="math notranslate nohighlight">\(1000 / (1,05)^1 = 952.38\)</span></p>
+<p> jaar 2: <span class="math notranslate nohighlight">\(1000 / (1,05)^2 = 907.03\)</span></p>
+<p> jaar 3: <span class="math notranslate nohighlight">\(1000 / (1,05)^3 = 863.838\)</span></p>
+<p> jaar 20: <span class="math notranslate nohighlight">\(1000 / (1,05)^{20} = 367.89\)</span></p>
+<p> jaar n: <span class="math notranslate nohighlight">\(1000 / (1,05)^n\)</span></p>
+<p> </p>
+<p>Met deze simple basisbeginselen kun je eigenlijk alle rekensommen maken die nodig zijn om grondexploitaties, huurexploitaties of de haalbaarheid van duurzaamheidsinvesteringen te maken. De complexiteit van de grondexploitatie is niet dat de som ingewikkeld is. De complexiteit is dat de som groot is.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -401,6 +435,24 @@ covers a few tips for how to do so.</p>
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="tijdsvoorkeur.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tijdsvoorkeur van geld</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="parameters.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Parameters</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

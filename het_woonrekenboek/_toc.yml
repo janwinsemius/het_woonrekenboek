@@ -3,9 +3,19 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: financiele-rekenkunde
-- file: rente-op-rente
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+- caption: Financiele Rekenkunde
+  chapters:
+  - file: financiele-rekenkunde
+  - file: tijdsvoorkeur
+  # - file: netto_contante_waarde
+  - file: parameters
+- caption: Stichtingskosten en RGW
+  chapters:
+  - file: markdown
+- caption: Grondexploitatie
+  chapters:
+  - file: notebooks
+- caption: Woningexploitatie
+  chapters:
+  - file: markdown-notebooks
