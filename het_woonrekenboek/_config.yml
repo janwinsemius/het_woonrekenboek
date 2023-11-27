@@ -38,5 +38,14 @@ html:
 
 extra_static_paths:
   - _static
+  - images
 custom_static_path: ['_static']
 extra_css: ['custom.css']
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+
+    

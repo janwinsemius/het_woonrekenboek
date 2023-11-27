@@ -2,17 +2,28 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: 0_intro
 parts:
 - caption: Financiele Rekenkunde
   chapters:
-  - file: financiele-rekenkunde
-  - file: tijdsvoorkeur
+  - file: 1_financiele_rekenkunde
+  - file: 2_tijdsvoorkeur
   # - file: netto_contante_waarde
-  - file: parameters
+  - file: 3_parameters
+  - file: 4_disconteringsvoet
 - caption: Stichtingskosten en RGW
   chapters:
-  - file: markdown
+  - file: 5_rgw
+  - file: 6_rgw_parameters
+  - file: 7_opbrengsten
+  - file: 8_aanneemsom
+  - file: 9_aanneemsom_in_elementen
+  - file: 10_wat_kost_wat
+  - file: 11_staartkosten
+  - file: 12_bijkomende_kosten
+  - file: 13_verhouding_grond_woning
+  - file: 14_andere_prijsmethoden
+
 - caption: Grondexploitatie
   chapters:
   - file: notebooks
