@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Notebooks with MyST Markdown &#8212; het_woonrekenboek</title>
+    <title>Opbrengsten &#8212; het_woonrekenboek</title>
   
   
   
@@ -63,10 +63,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '7_opbrengsten';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Bouwkostendata" href="8_aanneemsom.html" />
+    <link rel="prev" title="RGW, markt en parameters" href="6_rgw_parameters.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,10 +175,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="4_disconteringsvoet.html">Disconteringsvoet</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Stichtingskosten en RGW</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="5_rgw.html">Residuele Grondwaarde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6_rgw_parameters.html">RGW, markt en parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_opbrengsten.html">Opbrengsten</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Opbrengsten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8_aanneemsom.html">Bouwkostendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9_aanneemsom_in_elementen.html">Aanneemsom in elementen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10_wat_kost_wat.html">Wat kost wat?</a></li>
@@ -191,8 +192,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Woningexploitatie</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notebooks with MyST Markdown</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -264,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/janwinsemius/het_woonrekenboek/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/janwinsemius/het_woonrekenboek/issues/new?title=Issue%20on%20page%20%2F7_opbrengsten.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +295,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/7_opbrengsten.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +377,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Opbrengsten</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,9 +387,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kwaliteit">Kwaliteit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organiseren-van-marktinformatie">Organiseren van marktinformatie</a></li>
 </ul>
             </nav>
         </div>
@@ -400,50 +400,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Permalink to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Permalink to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Permalink to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="opbrengsten">
+<h1>Opbrengsten<a class="headerlink" href="#opbrengsten" title="Permalink to this heading">#</a></h1>
+<p>De basis van de RGW-berekening zijn de opbrengsten. In dit hoofdstuk gaat het primair om de inschatting van de VON-opbrengsten van nieuwbouw koopwoningen.
+Een berekening van de haalbaarheid van een locatie start meestal met een woningprogramma in:</p>
+<ul class="simple">
+<li><p>aantallen</p></li>
+<li><p>prijscategorie</p></li>
+<li><p>typologie</p></li>
+<li><p>gbo (gebruiksoppervlakte)</p></li>
+</ul>
+<p>Dat betekent dat je voor je berekening primair op zoek bent naar prijzen per m2. Die prijzen zijn te vinden door de lokale makelaar te bellen of door zelf te kijken naar vraagprijzen in de omgeving. Een mogelijke bron is de NVM-marjktinformatie voor je regio. Tegenwooridg is die marktinformatie openbaar beschikbaar op het niveau van de Coorop regio. Dat is niet altijd even behulpzaam. Bijvoorbeeld voor Groningen is de regio Overig Groningen zo groot dat daar zowel Zoutkamp als Groningen stad binnen valt.</p>
+<p>Toch geeft die regio wel een goede illustratie van de prijsverschillen afhankelijk van de typologie:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Woningtype</p></th>
+<th class="head"><p>prijs per m2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tussenwoning</p></td>
+<td><p>3.253</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hoekwoning</p></td>
+<td><p>3.121</p></td>
+</tr>
+<tr class="row-even"><td><p>Tweekap</p></td>
+<td><p>2.902</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vrijstaand</p></td>
+<td><p>2.907</p></td>
+</tr>
+<tr class="row-even"><td><p>Appartement</p></td>
+<td><p>3.441</p></td>
+</tr>
+</tbody>
+</table>
+<p>Het prijsverschil tussen categorieën kan verschillen afhankelijk van het marktgebied. In woningmarktgebieden die sterk onder druk staan is het goed mogelijk dat de prijs per m2 van tweekappers en vrijstaande woningen beduidend hoger liggen dan de prijzen per m2 van tussenwoningen en hoekwoningen. Zeker bij schaarste aan de bovenkant van de markt kunnen de ptrijsniveaus daar sterk stijgen.</p>
+<p>Bijzondere woningtypes, zoals patiowoningen of bungalows, komen in deze overzichten niet eens voor. Zeker als er weinig ervaring met dergelijke woningen is in de regio is een prijsinschatting lastig.
+Daarbij vormt de indeling in prijscategorieen vaak een belemmering. Misschien is het wenselijk voor senioren meer patiowoningen, bungalows en appartementen te realiseren. Waarschijnlijk is van al die typologieen de prijs per m2 beduidend hoger dan van een tussenwoningen. Bij een masrktconforme benadering betekent dat automatisch dat kleinere woningen moeten worden gebouwd om binnen de prijscategorie te blijven.</p>
+<section id="kwaliteit">
+<h2>Kwaliteit<a class="headerlink" href="#kwaliteit" title="Permalink to this heading">#</a></h2>
+<p>Het is van belang te beseffen dat in die eerste fase van rekenen er vaak nog niet of nauwelijks een omschrijving van de kwaliteit die zal worden gemaakt. Twee woningen van hetzelfde type met hetzelfde gbo op dezelfde plek zullen een andere waarde hebben als ze een andere kwaliteit hebben. Om die reden is het van belang bij het maken van een residuele grondwaardeberekening altijd ook een beeld te hebben van de kwaliteitseisen die worden gesteld. Het verwachtingspatroon moet helder zijn.</p>
+<p>Overigens zou je kunnen zeggen dat hier afstand wordt genomen van de marktconforme benadering. Als een prijscategorie als eis stelt en je stelt een bepaalde kwaliteit als eis, dan is de ontwikkeling eigenlijk al niet meer marktconform. Er wordt niet meer gemaakt wat in de vrije markt tot stand zou komen. Als dat wel het geval zou zijn, zou de grondwaarde een andere zijn.
+Nederland zodanig is dat het niet snel zal gebeuren dat troep wordt gemaakt.</p>
+<p>Een bijzonderheid is nog dat in de praktijk vaak bij verkoop extra kwaliteiten bovenop de basiswoning worden aangeboden zoals bijvoorbeeld:</p>
+<ul class="simple">
+<li><p>garage</p></li>
+<li><p>dakkapel</p></li>
+<li><p>aanbouw / opbouw / uitbouw</p></li>
+<li><p>etc.
+Een belangrijke vraag is hoe hiermee om te gaan.</p></li>
+</ul>
+<p>Er zijn twee problemen vanuit gemeentelijke perspectief:</p>
 <ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
+<li><p>Door extra kwaliteiten aan te bieden onttrekt de ontwikkelaar zich mogelijk aan de voorgeschreven prijscategorieën</p></li>
+<li><p>Als de extra kwaliteit meteen was meegenomen zou over de hogere VON prijs ook grondwaarde worden gerekend.</p></li>
 </ol>
-<p>That’s all that is needed to get started!</p>
+<p>Dus de ontwikkelaar onttrekt zich zowel aan de prijscategorie als aan de waardebepaling.
+Daar staat tegenover dat het altijd lastig is om de extra kwaliteiten wel mee te nemen.
+Als de koper bijvoorbeeld een dakkapel kiest, waarvan de kostprijs (bouwkosten) € 7.000 is, maar de marktwaarde van de woning wordt € 12.000 hoger, dan zou de grondprijs met € 5.000 kunnen worden verhoogd. Als de woning zonder dakkapel eenmaal is geleverd, kan de koper de dakkapel alsnog maken voor het lagere bedrag. Bij het afrekenen van grondprijzen over opties is het risico altijd dat de koper geen opties meer kiest en er na oplevering nog van alles aan de woningen wordt toegevoegd en veranderd.</p>
+<p>Er is geen standaard-strategie om hier uit te komen.</p>
 </section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Permalink to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
-</div>
+<section id="organiseren-van-marktinformatie">
+<h2>Organiseren van marktinformatie<a class="headerlink" href="#organiseren-van-marktinformatie" title="Permalink to this heading">#</a></h2>
+<p>Er is op het punt van het inschatten van opbrengsten wel een duidelijk verschil tussen marktpartijen en overheden. De markt beschouwd het inschatten van de opbrengst als core-business van de ontwikkelaar. Dat is waar hij goed in is. De data van oude projecten wordt dan ook verzameld en bewaard en is paraat om bij nieuwe projecten als marktkennis te worden ingezet.
+Gemeenten zijn vaak slecht op de hoogte van wat er precies verkocht is. Na de beleidsmatige prijscategorie en kwaliteit houdt het vaak op. Eerder merkte ik al op dat gemeentelijke overheden eigenlijk de grootste woningontwikkelaars van Nederland zijn. Daarbij past die opstelling secht. Eigenlijk zouden gemeenten als eis aan marktpartijen moeten stellen dat de verkoopinformatie terug wordt geleverd aan de gemeente. Die verkoopinformatie zou op zijn minst moeten bestaan uit:</p>
+<ul class="simple">
+<li><p>definitieve verkoopprijs</p></li>
+<li><p>opties en prijs</p></li>
+<li><p>verkoopmoment / verkoopduur op objectniveau</p></li>
+</ul>
+<p>Door die gegevens te bewaren en te koppelen aan de eigen grondexploitatiedata is het mogelijk in de toekomst meer onderbouwde beslissingen te nemen.</p>
 </section>
 </section>
 
@@ -478,13 +506,22 @@ See the YAML at the top of this page for example.</p></li>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="notebooks.html"
+       href="6_rgw_parameters.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">RGW, markt en parameters</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="8_aanneemsom.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bouwkostendata</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -501,9 +538,8 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kwaliteit">Kwaliteit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organiseren-van-marktinformatie">Organiseren van marktinformatie</a></li>
 </ul>
   </nav></div>
 

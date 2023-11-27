@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Notebooks with MyST Markdown &#8212; het_woonrekenboek</title>
+    <title>Residuele Grondwaarde &#8212; het_woonrekenboek</title>
   
   
   
@@ -63,10 +63,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '5_rgw';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="RGW, markt en parameters" href="6_rgw_parameters.html" />
+    <link rel="prev" title="Disconteringsvoet" href="4_disconteringsvoet.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,8 +177,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="4_disconteringsvoet.html">Disconteringsvoet</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Stichtingskosten en RGW</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="5_rgw.html">Residuele Grondwaarde</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Residuele Grondwaarde</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6_rgw_parameters.html">RGW, markt en parameters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="7_opbrengsten.html">Opbrengsten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8_aanneemsom.html">Bouwkostendata</a></li>
@@ -191,8 +194,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Woningexploitatie</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notebooks with MyST Markdown</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -264,7 +267,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/janwinsemius/het_woonrekenboek/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/janwinsemius/het_woonrekenboek/issues/new?title=Issue%20on%20page%20%2F5_rgw.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +297,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/5_rgw.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +379,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Residuele Grondwaarde</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,9 +389,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grondwaarde-grondprijs-en-grondkosten">Grondwaarde, grondprijs en grondkosten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#waarde-ruwe-grond">Waarde ruwe grond</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#residu-en-markt">Residu en markt</a></li>
 </ul>
             </nav>
         </div>
@@ -400,50 +403,61 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Permalink to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Permalink to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="residuele-grondwaarde">
+<h1>Residuele Grondwaarde<a class="headerlink" href="#residuele-grondwaarde" title="Permalink to this heading">#</a></h1>
+<p>De methode van de residuele grondwaarde is terug te voeren tot de 18de eeuwse engelse econoom Ricardo. Hij betoogde dat graan niet duur was vanwege hoge grondprijzen, maar dat het omgekeerde het geval is. Op enig moment zijn grondprijzen hoog omdat graan duur is. De winst op graan kan worden geïncasseerd door de grondeigenaar. Die beschikt immers over de schaarse productiefactor, de grond.</p>
+<p>De residuele grondwaarde wordt als volgt berekend:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{Opbrengsten} &amp;\\
+\text{Kosten} &amp; \hspace{1em} -\\ 
+\hline
+\text{Residuele Grondwaarde} &amp;\\
+\end{align*}\]</div>
+<p>De opbrengsten zijn afhankelijk van de bestemming de kwaliteit, de plek en de marktomstandigheden. Bij een koopwoning is het de VON-prijs van de woning. Bij een huurwoning de te berekenen waarde van de huurwoning. Als die lager is dan de waarde van een vergelijkbare koopwoning zou de grondwaarde dus lager uitvallen. Het is ook mogelijk de opbrengst van de marktconforme koopwoning te hanteren, om zo ook onder de huurwoning tot een marktconforme grondwaarde te komen.</p>
+<p>De te hanteren kosten zijn de zogenaamde stichtingskosten (stiko) ex. grond. (In de tekst wordt in plaats van  stiko ex grond vaak de term bouwkosten gehanteerd.)
+Het gaat om alle die nodig zijn om het huis te maken, behalve de grondkosten. Op hoofdlijnen gaat het om:</p>
+<ul class="simple">
+<li><p>aanneemsom</p></li>
+<li><p>bijkomende kosten</p></li>
+<li><p>ontwikkelkosten</p></li>
+<li><p>BTW</p></li>
+</ul>
+<p>Als we die allemaal van de VON prijs aftrekken blijft uiteindelijk de residuele grondwaarde ex. BTW over.</p>
+<p>Als alle kosten en opbrengsten marktconform zijn ingeshcat kom je op die manier in principe op een marktconforme grondwaarde uit. Als je meer uitgeeft dan de residuele grondwaarde wotrdt je project verliesgevend. De RGW is de zogenaamde maximaal theoretische grondwaarde.</p>
+<section id="grondwaarde-grondprijs-en-grondkosten">
+<h2>Grondwaarde, grondprijs en grondkosten<a class="headerlink" href="#grondwaarde-grondprijs-en-grondkosten" title="Permalink to this heading">#</a></h2>
+<p>De residuele grondwaarde gaat over de waarde van de grond. De grondkosten vormen een optelsom van alle kosten die nodig zijn om de grond klaar te maken om je bestemming er op te realiseren. Op hoofdlijnen gaat het om:</p>
+<ul class="simple">
+<li><p>verwerving</p></li>
+<li><p>bouwrijp maken</p></li>
+<li><p>woonrijp maken</p></li>
+<li><p>plankosten</p></li>
+</ul>
+<p>De uiteindelijke prijs moet ergens tussen de RGW en de kostprijs in liggen. Als de prijs hoger is dan de grondwaarde wordt de ontwikkeling van de bestemming verliesgevend. Als de prijs lager ligt dan de grondkosten, wordt de grondontwikkeling verliesgevend.</p>
 </section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Permalink to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
-<ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
-</ol>
-<p>That’s all that is needed to get started!</p>
+<section id="waarde-ruwe-grond">
+<h2>Waarde ruwe grond<a class="headerlink" href="#waarde-ruwe-grond" title="Permalink to this heading">#</a></h2>
+<p>Je zou ook nog een een niveau verder door kunnen rekenen naar de residuele waarde van ruwe bouwgrond:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{Opbrengsten} \\
+\text{Stichtingskosten ex. grond}  &amp; \hspace{1em} -\\
+\text{Grondkosten ex. verwerving}  &amp; \hspace{1em} -\\
+
+\hline
+\text{Residuele waarde ruwe grond} \\
+\end{align*}\]</div>
+<p>Dat is de rekensom die je vaak maakt om de haalbaarheid van het project vast te stellen helemaal in het begin, als er nog niet is verworven.</p>
 </section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Permalink to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
-</div>
+<section id="residu-en-markt">
+<h2>Residu en markt<a class="headerlink" href="#residu-en-markt" title="Permalink to this heading">#</a></h2>
+<p>In plaats van de residuele grondwaarde kun je ook het residu uitrekenen. Dit is wat overblijft als je de bouwkosten en de grondkosten aftrekt van de opbrengsten.</p>
+<a class="reference internal image-reference" href="_images/residu.png"><img alt="_images/residu.png" class="align-center" src="_images/residu.png" style="width: 600px;" /></a>
+<p>Uitgangspunt in deze rekensom is dat nog niemand een deel van de (over)winst heeft geïncasseerd. De verwervingskosten houden geen rekening met de verdiencapaciteit van de ontwikkeling. In het perspectief van Ricardo zou het residu steeds kunnen worden geincasseerd door de grondeigenaar, omdat grond de schaarse productiefactor is. Dat is echter niet vanzelfsprekend het geval. Er zijn ook andere productiefactoren die schaars kunnen zijn.</p>
+<p>Contractvorming in de bouw gaat dan steeds over de verdeling van het residu. De residuele grondwaarde berekening is in dat perspectief geen methode om een absolute waarde vast te stellen, maar een methode die behulpzaam is bij het tot stand komen van die verdeling. De uiteindelijke verdeling is afhankelijk van de markt.</p>
+<p>In Nederland is het sinds begin jaren ‘90 lange tijd zo geweest dat de voorraad ontwikkellocaties de belangrijkste beperkende factor voor de woningproductie was. De residuele grondwaarde is dan een logische methode om de waarde van grond te benaderen.
+Vandaag is dat niet vanzelfsprekend het geval. Sinds de kredietcrisis (2008-2011) vormt de productiecapaciteit ook een belangrijke beperkende factor. De sterke stijging van de bouwkosten kun je beschouwen als een toedeling van een belangrijk deel van het residu aan aannemer en adviseurs, die een andere schaarse productiefactor beheersen namelijk arbeid. Het residu komt in steeds belangrijker mate toe aan de factor arbeid, wat tot uiting komt in het bouwkostenniveau. Uiteindelijk resteert dan minder residue om aan de grondwaarde toe te rekenen.</p>
 </section>
 </section>
 
@@ -478,13 +492,22 @@ See the YAML at the top of this page for example.</p></li>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="notebooks.html"
+       href="4_disconteringsvoet.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Disconteringsvoet</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="6_rgw_parameters.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">RGW, markt en parameters</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -501,9 +524,9 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grondwaarde-grondprijs-en-grondkosten">Grondwaarde, grondprijs en grondkosten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#waarde-ruwe-grond">Waarde ruwe grond</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#residu-en-markt">Residu en markt</a></li>
 </ul>
   </nav></div>
 

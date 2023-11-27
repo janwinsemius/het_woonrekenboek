@@ -1,0 +1,14 @@
+# Het Woonrekenboek
+
+## Inleiding
+Wonen is een eerste levensbehoefte. Daarom er - zeker als er niet genoeg huizen zijn of huizen te duur zijn - vaak vanuit een ideëel of politiek perspectief over gesproken. Woonbeleid gaat over doelstellingen als beschikbaarheid, betaalbaarheid, duurzaamheid en ruimtelijke kwaliteit. Als het algemeen belang aan de orde is, hebben financiële aspecten de neiging ondergesneeuwd te raken. Als te weinig en te duur wordt gebouwd is de kritiek dat de primaire levensbehoefte niet aan "de markt" kan worden overgelaten. De overheid grijpt in met regels om bijvoorbeeld meer huurwoningen te maken, of gemeenten moeten het Rijk beloven bepaalde woningaantallen te bouwen.
+
+Het gaat hier niet over de (politieke) discussie over de oplossingen voor de woningmarkt. Dan zou het geen rekenboek hebben geheten. Het doel is om meer inzicht te verschaffen in de financiële krachten op de markt en de financiële afwegingen die partijen maken. Door dat inzicht is het beter mogelijk te voorspellen wat de gevolgen van beleidsingrepen zijn. Een volgende stap is om instrumenten te bedenken die zijn afgestemd op de krachten die in de markt spelen.
+
+Los van politieke achtergrond en doelstellingen is dit inzicht in de markt van belang. Sturen van de woningmarkt is als het sturen van een zeilboot. De marktvraag is de wind. Als er geen wind is, valt er weinig te sturen in een zeilboot. Als het te hard waait is het ook lastig. Om zo hard mogelijk te gaan, is het van belang de boot en de wind zo goed mogelijk te begrijpen. Het helpt niet als de eigenaar van de boot, de kapitein en de passagiers met elkaar afspreken om eerder op de bestemming aan te komen. Een gratuite reactie zou kunnen zijn: je moet een motor kopen. Er zijn politieke partijen die de woningmarkt helemaal willen afschaffen. Het lijkt echter niet erg waarschijnlijk dat dit snel zal gebeuren. Bovendien, als je dat op een slimme manier wil doen, heb je nog steeds dat financiële inzicht nodig. De rekenmethhoden die hier aan de orde komen werden ook gehanteerd in het "gouden" volkshuisvestingstijdper van de BWS (Besluit Woninggebonden Subsidies) en de BLS (Besluit Locatiegebonden Subsidies). Sterker, toen lag de kennis over deze rekenonderwerpen primair bij publieke partijen.
+
+Het woonrekenboek gaat zeer concreet vanaf de basis in op de rekensommen waarop de woningmarkt draait. Het is geen theoretisch economieboek. Dat betekent dat er soms wat vrijheden worden genomen met definities en terminologie. Het uitgangspunt is een praktische benadering.
+
+## Techniek en instrumenten
+Dit boek is gemaakt in jupyter. Dat betekent dat de rekensommen zijn geprogrammeerd in python. De liefhebber kan naar de broncode van het boek gaan en de rekensommen bekijken en gebruiken. Tegelijk is in dit boek aandacht besteed aan het maken van de sommen in de huis-, tuin- en keukenrekenmachine van vandaag: Excel.
+
